@@ -1,6 +1,6 @@
 
 :root {
-  --backround-primary-color: #D1D1D1;
+  --backround-primary-color: #E1E1E1;
   --text-color: #1C1D25;
   --active-color: #489c79;
   --button-color: #25314A;
@@ -15,7 +15,7 @@ body {
     background-color: var(--backround-primary-color);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
 }
 @import url("sanitize.css");
@@ -49,9 +49,10 @@ body {
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)
   0, #D1D1D1 100%);
-  margin-top: 0px;
-  height: 100px;
-  width: 200px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   content: '';
 }
 
@@ -186,13 +187,13 @@ body {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15 px;
+  margin-left: 15px;
 }
 
 .navigation-list__item--active, .nav-list__item--active:visited {
   text-decoration: none;
   color: var(--text-color);
-  text-size-adjust: 24px
+  text-size-adjust: 0;
 }
 
 .profile {
@@ -203,7 +204,7 @@ body {
 }
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 175px;
   margin-right: 40px;
   border-radius: 50%;
 }
@@ -285,10 +286,16 @@ button:hover, button:focus {
 
 .page-footer {
     clear: both;
-    disply: flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     border-top: 1px solid #1C1D25;
+}
+
+.page-footer__item {
+  float: none;
+  width: 32px;
+  margin-right: 5px;
 }
 
 .grid__item {

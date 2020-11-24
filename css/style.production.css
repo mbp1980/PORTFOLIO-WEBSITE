@@ -6,10 +6,10 @@
 */
 
 body {
-    background-color: #D1D1D1;
+    background-color: #E1E1E1;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
 }
 @import url("sanitize.css");
@@ -49,11 +49,11 @@ body {
 .page-header::after {
   display: block;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), to(#D1D1D1));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), to(#E1E1E1));
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0)
-  0, #D1D1D1 100%);
+  0, #E1E1E1 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)
-  0, #D1D1D1 100%);
+  0, #E1E1E1 100%);
   margin-top: 0px;
   height: 100px;
   width: 200px;
@@ -227,7 +227,7 @@ body {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15 px;
+  margin-left: 15px;
 }
 
 .navigation-list__item--active {
@@ -236,7 +236,7 @@ body {
   -webkit-text-size-adjust: 24px;
      -moz-text-size-adjust: 24px;
       -ms-text-size-adjust: 24px;
-          text-size-adjust: 24px
+          text-size-adjust: 0;
 }
 
 .nav-list__item--active:visited {
@@ -245,7 +245,7 @@ body {
   -webkit-text-size-adjust: 24px;
      -moz-text-size-adjust: 24px;
       -ms-text-size-adjust: 24px;
-          text-size-adjust: 24px
+          text-size-adjust: 0;
 }
 
 .profile {
@@ -262,7 +262,7 @@ body {
 }
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 175px;
   margin-right: 40px;
   border-radius: 50%;
 }
@@ -351,13 +351,19 @@ button:focus {
 
 .page-footer {
     clear: both;
-    disply: flex;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
     border-top: 1px solid #1C1D25;
+}
+
+.page-footer__item {
+  float: none;
+  width: 32px;
+  margin-right: 5px;
 }
 
 .grid__item {
